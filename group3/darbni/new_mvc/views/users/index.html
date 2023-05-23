@@ -1,0 +1,35 @@
+
+<h1>ALL Users</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    <?php foreach($p as $user){?>
+       <td><?php echo $user->getname();?></td>
+       <td><?php echo $user->getemail();?></td>
+
+     
+             
+         </tr><?php }?>
+         </table>
+         
+
+<br> <br>  
+
+    </tbody>
+</table>
+<a href='<?php echo BASE_PATH."add/";?>'>Add</a>
+
+
+<!-- <?php foreach($p as $user)?>
+    <td><?php echo $user->name;?></td>
+      <td><?php echo $user->email;?></td>
+  
+      <td> <a href='<?php echo BASE_PATH."info/".$user->id;?>'><button>show info</button></a></td> -->
+
+        
